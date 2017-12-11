@@ -1,0 +1,112 @@
+<!DOCTYPE hrml>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container mainHeader">
+		<div class="row">
+			<div class="col-md-3">
+				<img class="headerLogo" src="img/levelDISCORD.png" alt="Level Gaming Logo">
+			</div>
+			<div class="col-md-9">
+				<h1 class="headerH1">Squad Season 3 Sign-Ups</h1>
+				<p>Individuals are allowed to sign up and participate. To ensure a more comfortable experience for others, we're allowing friends and teammates to pair up in groups of any size. ALL players must be in the Level Gaming <a href="http://discord.gg/levelgg" target="_blank">Discord</a>.</p>
+				<ul class="headerUl">
+					<li>Battle time: 3PM Eastern every Saturday</li>
+					<li>Start date: TBD</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container inputArea">
+		<form class="inputFields">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+					 	<div class="form-group row">
+					    	<label for="exampleInputEmail1" class="col-sm-2">Email address</label>
+							<div class="col-sm-10">
+					    		<input type="email" class="form-control" id="inputEmail" name="Email" aria-describedby="emailHelp" placeholder="username@domain" required>
+							</div>
+					  	</div>
+						<div class="form-group row">
+		 			    	<label for="exampleInputSteamUserName" class="col-sm-2">Squad Username</label>
+							<div class="col-sm-10">
+		 			    		<input type="text" class="form-control" id="inputSteamName" aria-describedby="steamUserNameHelp" placeholder="steamusername" required>
+							</div>
+		 			  	</div>
+						<div class="form-group row">
+		 			    	<label for="exampleInputDiscordUserName" class="col-sm-2">Discord Username</label>
+							<div class="col-sm-10">
+		 			    		<input type="text" class="form-control" id="inputDiscordName" aria-describedby="discordUserNameHelp" placeholder="discordusername" required>
+							</div>
+		 			  	</div>
+						<div class="form-group row">
+					    	<label for="inputClan" class="col-sm-2">Clan or community?</label>
+							<div class="col-sm-10">
+					    		<input type="text" class="form-control" id="inputClan" aria-describedby="clanInput" placeholder="Name of your clan or community">
+							</div>
+					  	</div>
+						<div class="form-group">
+							<label for="squadMatesTextArea">Do you have any friends/Squad mates you would like to play with?</label>
+								<textarea class="form-control" id="squadMatesTextArea" rows="1" placeholder="Enter up to 5 friends john, joe, etc."></textarea>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<label class="radioLabel" for="interestSL">Have you joined the <a href="http://discord.gg/levelgg" target="_blank">Level Discord</a>?</label>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="discordRadios" id="discordRadios1" value="option1" checked required> Yes
+							</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="discordRadios" id="discordRadios2" value="option2" required> No
+							</label>
+						</div>
+						<label class="radioLabel" for="interestSL">Are you interested in a Squad Lead position?</label>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="slRadios" id="squadLeadRadios1" value="option1" checked required> Yes
+							</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+									<input class="form-check-input" type="radio" name="slRadios" id="squadLeadRadios2" value="option2" required> No
+							</label>
+						</div>
+						<label class="checkLabel" for="participate">Have you participated in previous Seasons or events?</label>
+						<div class="form-check">
+							<label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value=""> 2017 Charity Event
+					  		</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value=""> Season 1
+					  		</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label">
+							    <input class="form-check-input" type="checkbox" value=""> Season 2
+					  		</label>
+						</div>
+					</div>
+				</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+
+	<footer>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	</footer>
+</body>
+
+</html>

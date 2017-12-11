@@ -1,0 +1,32 @@
+.mainHeader {
+	text-align: left;
+	margin-top: 75px;
+	/*border: 1px solid green;*/
+}
+
+.headerH1 {
+	text-align: center;
+}
+
+.inputArea {
+	/*border: 1px solid red;*/
+}
+
+.headerLogo {
+	height: 200px;
+	width: 200px;
+}
+
+.headerUl {
+	text-align: left;
+	list-style: none;
+}
+
+.inputFields {
+	margin-top: 75px;
+	display: block;
+}
+
+.line {
+	padding-bottom: 10px;
+}
