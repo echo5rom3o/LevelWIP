@@ -1,4 +1,4 @@
-<!DOCTYPE hrml>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div class="container inputArea">
-		<form class="inputFields">
+		<form class="inputFields" id="test-form">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
@@ -38,75 +38,93 @@
 						<div class="form-group row">
 		 			    	<label for="inputSteamName" class="col-sm-2">Squad Username</label>
 							<div class="col-sm-10">
-		 			    		<input type="text" class="form-control" id="inputSteamName" aria-describedby="steamUserNameHelp" placeholder="steam username" required>
+		 			    		<input type="text" class="form-control" id="inputSteamName" name="SteamName" aria-describedby="steamUserNameHelp" placeholder="steam username" required>
 							</div>
 		 			  	</div>
 						<div class="form-group row">
 		 			    	<label for="inputDiscordName" class="col-sm-2">Discord Username</label>
 							<div class="col-sm-10">
-		 			    		<input type="text" class="form-control" id="inputDiscordName" aria-describedby="discordUserNameHelp" placeholder="discord username" required>
+		 			    		<input type="text" class="form-control" id="inputDiscordName" name="DiscordName"  aria-describedby="discordUserNameHelp" placeholder="discord username" required>
 							</div>
 		 			  	</div>
 						<div class="form-group row">
 					    	<label for="inputClan" class="col-sm-2">Clan or community?</label>
 							<div class="col-sm-10">
-					    		<input type="text" class="form-control" id="inputClan" aria-describedby="clanInput" placeholder="Name of your clan or community">
+					    		<input type="text" class="form-control" id="inputClan" name="Clan_Community" aria-describedby="clanInput" placeholder="Name of your clan or community">
 							</div>
 					  	</div>
 						<div class="form-group">
 							<label for="squadMatesTextArea">Do you have any friends/Squad mates you would like to play with?</label>
-								<textarea class="form-control" id="squadMatesTextArea" rows="1" placeholder="Enter up to 5 friends john, joe, etc."></textarea>
+								<textarea class="form-control" id="squadMatesTextArea" name="Friends" rows="1" placeholder="Enter up to 5 friends john, joe, etc."></textarea>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<label class="discordRadios" for="interestSL">Have you joined the <a href="http://discord.gg/levelgg" target="_blank">Level Discord</a>?</label>
 						<div class="form-check">
 							<label class="form-check-label">
-									<input class="form-check-input" type="radio" name="discordRadios" id="discordRadios1" value="option1" checked required> Yes
+									<input class="form-check-input" type="radio" name="JoinedDiscord" id="discordRadios1" value="option1" checked required> Yes
 							</label>
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-									<input class="form-check-input" type="radio" name="discordRadios" id="discordRadios2" value="option2" required> No
+									<input class="form-check-input" type="radio" name="JoinedDiscord" id="discordRadios2" value="option2" required> No
 							</label>
 						</div>
-						<label class="slRadios" for="interestSL">Are you interested in a Squad Lead position?</label>
+						<label class="slRadios" for="SquadLead">Are you interested in a Squad Lead position?</label>
 						<div class="form-check">
 							<label class="form-check-label">
-									<input class="form-check-input" type="radio" name="slRadios" id="squadLeadRadios1" value="option1" checked required> Yes
+									<input class="form-check-input" type="radio" name="SquadLead" id="squadLeadRadios1" value="option1" checked required> Yes
 							</label>
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-									<input class="form-check-input" type="radio" name="slRadios" id="squadLeadRadios2" value="option2" required> No
+									<input class="form-check-input" type="radio" name="SquadLead" id="squadLeadRadios2" value="option2" required> No
 							</label>
 						</div>
-						<label class="checkLabel" for="participate">Have you participated in previous Seasons or events?</label>
+						<label class="checkLabel" for="Participate">Have you participated in previous Seasons or events?</label>
 						<div class="form-check">
 							<label class="form-check-label">
-							    <input class="form-check-input" name="participate" type="checkbox" value=""> 2017 Charity Event
+							    <input class="form-check-input" name="Participate" type="checkbox" value=""> 2017 Charity Event
 					  		</label>
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-							    <input class="form-check-input" name="participate" type="checkbox" value=""> Season 1
+							    <input class="form-check-input" name="Participate" type="checkbox" value=""> Season 1
 					  		</label>
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-							    <input class="form-check-input" name="participate" type="checkbox" value=""> Season 2
+							    <input class="form-check-input" name="Participate" type="checkbox" value=""> Season 2
 					  		</label>
 						</div>
 					</div>
 				</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="submit" class="btn btn-primary" id="submit-form">Submit</button>
+			</div>
 		</form>
 	</div>
 
 	<footer>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<!-- <script>
+			var $form = $('form#test-form'),
+		    url = 'https://script.google.com/macros/s/AKfycbyIL8qHVpc-o08FQCMjQB028_w8I_Q7X4UGGcBaRFimInm47sM/exec'
+
+
+				$('#submit-form').on('click', function(e) {
+				  e.preventDefault();
+				  var jqxhr = $.ajax({
+				    url: url,
+				    method: "GET",
+				    dataType: "json",
+				    data: $form.serializeObject()
+				  }).success(
+				    // do something
+				  );
+				})
+		</script> -->
 	</footer>
 </body>
 
