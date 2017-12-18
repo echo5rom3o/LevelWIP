@@ -6,12 +6,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 	<meta charset="utf-8">
+	<title>Level Gaming - Registration</title>
 </head>
 <body>
 	<div class="container mainHeader">
 		<div class="row">
 			<div class="col-md-3">
-				<img class="headerLogo" src="img/levelDISCORD.png" alt="Level Gaming Logo">
+				<a href="http://level.gg"><img class="headerLogo" src="img/levelDISCORD.png" alt="Level Gaming Logo"></a>
 			</div>
 			<div class="col-md-9">
 				<h1 class="headerH1">Squad Season 3 Sign-Ups</h1>
@@ -29,21 +30,21 @@
 				<div class="row">
 					<div class="col-md-8">
 					 	<div class="form-group row">
-					    	<label for="exampleInputEmail1" class="col-sm-2">Email address</label>
+					    	<label for="inputEmail" class="col-sm-2">Email address</label>
 							<div class="col-sm-10">
 					    		<input type="email" class="form-control" id="inputEmail" name="Email" aria-describedby="emailHelp" placeholder="username@domain" required>
 							</div>
 					  	</div>
 						<div class="form-group row">
-		 			    	<label for="exampleInputSteamUserName" class="col-sm-2">Squad Username</label>
+		 			    	<label for="inputSteamName" class="col-sm-2">Squad Username</label>
 							<div class="col-sm-10">
-		 			    		<input type="text" class="form-control" id="inputSteamName" aria-describedby="steamUserNameHelp" placeholder="steamusername" required>
+		 			    		<input type="text" class="form-control" id="inputSteamName" aria-describedby="steamUserNameHelp" placeholder="steam username" required>
 							</div>
 		 			  	</div>
 						<div class="form-group row">
-		 			    	<label for="exampleInputDiscordUserName" class="col-sm-2">Discord Username</label>
+		 			    	<label for="inputDiscordName" class="col-sm-2">Discord Username</label>
 							<div class="col-sm-10">
-		 			    		<input type="text" class="form-control" id="inputDiscordName" aria-describedby="discordUserNameHelp" placeholder="discordusername" required>
+		 			    		<input type="text" class="form-control" id="inputDiscordName" aria-describedby="discordUserNameHelp" placeholder="discord username" required>
 							</div>
 		 			  	</div>
 						<div class="form-group row">
@@ -58,7 +59,7 @@
 						</div>
 					</div>
 					<div class="col-md-4">
-						<label class="radioLabel" for="interestSL">Have you joined the <a href="http://discord.gg/levelgg" target="_blank">Level Discord</a>?</label>
+						<label class="discordRadios" for="interestSL">Have you joined the <a href="http://discord.gg/levelgg" target="_blank">Level Discord</a>?</label>
 						<div class="form-check">
 							<label class="form-check-label">
 									<input class="form-check-input" type="radio" name="discordRadios" id="discordRadios1" value="option1" checked required> Yes
@@ -69,7 +70,7 @@
 									<input class="form-check-input" type="radio" name="discordRadios" id="discordRadios2" value="option2" required> No
 							</label>
 						</div>
-						<label class="radioLabel" for="interestSL">Are you interested in a Squad Lead position?</label>
+						<label class="slRadios" for="interestSL">Are you interested in a Squad Lead position?</label>
 						<div class="form-check">
 							<label class="form-check-label">
 									<input class="form-check-input" type="radio" name="slRadios" id="squadLeadRadios1" value="option1" checked required> Yes
@@ -83,17 +84,17 @@
 						<label class="checkLabel" for="participate">Have you participated in previous Seasons or events?</label>
 						<div class="form-check">
 							<label class="form-check-label">
-							    <input class="form-check-input" type="checkbox" value=""> 2017 Charity Event
+							    <input class="form-check-input" name="participate" type="checkbox" value=""> 2017 Charity Event
 					  		</label>
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-							    <input class="form-check-input" type="checkbox" value=""> Season 1
+							    <input class="form-check-input" name="participate" type="checkbox" value=""> Season 1
 					  		</label>
 						</div>
 						<div class="form-check">
 							<label class="form-check-label">
-							    <input class="form-check-input" type="checkbox" value=""> Season 2
+							    <input class="form-check-input" name="participate" type="checkbox" value=""> Season 2
 					  		</label>
 						</div>
 					</div>
