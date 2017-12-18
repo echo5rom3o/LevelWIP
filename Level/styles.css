@@ -9,6 +9,7 @@
 }
 
 .inputArea {
+	margin-top: 75px;
 	/*border: 1px solid red;*/
 }
 
@@ -23,7 +24,6 @@
 }
 
 .inputFields {
-	margin-top: 75px;
 	display: block;
 }
 
