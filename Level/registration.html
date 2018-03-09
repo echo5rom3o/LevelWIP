@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<title>Level Gaming - Registration</title>
+</head>
+<body>
+	<header>
+		<nav>
+			
+		</nav>
+	</header>
+	<div class="container mainHeader">
+		<div class="row">
+			<div class="col-md-3">
+				<a href="http://level.gg"><img class="headerLogo" src="img/levelDISCORD.png" alt="Level Gaming Logo"></a>
+			</div>
+			<div class="col-md-9">
+				<h1 class="headerH1">Squad Season 3 Sign-Ups</h1>
+				<p>Individuals are allowed to sign up and participate. To ensure a more comfortable experience for others, we're allowing friends and teammates to pair up in groups of any size. ALL players must be in the Level Gaming <a href="http://discord.gg/levelgg" target="_blank">Discord</a>.</p>
+				<ul class="headerUl">
+					<li><strong>Battle time:</strong> 3PM Eastern every Saturday</li>
+					<li><strong>Start date:</strong> Saturday January 20, 2018</li>
+					<li><strong>Team Captains</strong></li>
+					<ul>
+						<li>Red Team: Ac3ofNight</li>
+						<li>Blue Team: [66th] Brischalke</li>
+						<li>Green Team: Niner</li>
+						<li>Black Team: [ToG] subtlerod</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container inputArea">
+		<div class="alert alert-info" id="processingInfoAlert"style="display: none;">
+			Please wait...
+		</div>
+		<div class="alert alert-success" id="successfulPostAlert"style="display: none;">
+			Submitted. Please Join Discord and request a @LevelStaff member to assign you to a team.
+		</div>
+		<div class="alert alert-danger" id="failedPostAlert" style="display: none;">
+			Failed: <span id="formFailedText"></span>
+		</div>
+		<form class="inputFields" id="foo">
+			<div class="row">
+				<div class="col-md-8">
+				 	<div class="form-group row">
+				    	<label for="Email" class="col-sm-3 inputTitle">Email address</label>
+						<div class="col-sm-9">
+				    		<input type="email" class="form-control" id="inputEmail" name="Email" aria-describedby="emailHelp" placeholder="username@domain" required>
+						</div>
+				  	</div>
+					<div class="form-group row">
+	 			    	<label for="SteamName" class="col-sm-3 inputTitle">Squad Username</label>
+						<div class="col-sm-9">
+	 			    		<input type="text" class="form-control" id="inputSteamName" name="SteamName" aria-describedby="steamUserNameHelp" placeholder="steam username" required>
+						</div>
+	 			  	</div>
+					<div class="form-group row">
+	 			    	<label for="DiscordName" class="col-sm-3 inputTitle">Discord Username</label>
+						<div class="col-sm-9">
+	 			    		<input type="text" class="form-control" id="inputDiscordName" name="DiscordName"  aria-describedby="discordUserNameHelp" placeholder="discordname#0000" required>
+						</div>
+	 			  	</div>
+					<div class="form-group row">
+				    	<label for="Clan_Community" class="col-sm-3 inputTitle">Clan or community?</label>
+						<div class="col-sm-9">
+				    		<input type="text" class="form-control" id="inputClan" name="Clan_Community" aria-describedby="clanInput" placeholder="Name of your clan or community">
+						</div>
+				  	</div>
+					<div class="form-group">
+						<label for="squadMatesTextArea" class="inputTitle">Do you have any friends/Squad mates you would like to play with?</label>
+							<textarea class="form-control" id="squadMatesTextArea" name="Friends" rows="1" placeholder="Enter up to 5 friends john, joe, etc."></textarea>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<label class="discordRadios inputTitle" for="interestSL">Have you joined the <a href="http://discord.gg/levelgg" target="_blank">Level Discord</a>?</label>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="JoinedDiscord" id="discordRadios1" value="Yes" required> Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="JoinedDiscord" id="discordRadios2" value="No" required> No
+						</label>
+					</div>
+					<label class="slRadios inputTitle" for="SquadLead">Are you interested in a Squad Lead position?</label>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="SquadLead" id="squadLeadRadios1" value="Yes" required> Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="SquadLead" id="squadLeadRadios2" value="No" required> No
+						</label>
+					</div>
+					<label class="checkLabel inputTitle" for="Participate">Have you participated in previous Seasons or events?</label>
+					<div class="form-check">
+						<label class="form-check-label">
+						    <input class="form-check-input" name="2017_Charity_Event" type="checkbox" value="x"> 2017 Charity Event
+				  		</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+						    <input class="form-check-input" name="Season_1" type="checkbox" value="x"> Season 1
+				  		</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+						    <input class="form-check-input" name="Season_2" type="checkbox" value="x"> Season 2
+				  		</label>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<label class="discordRadios inputTitle" for="primaryTeam">Choose your primary team for this season.</label>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="primaryTeam" id="firstTeamRadios1" value="x" required> Red
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="primaryTeam" id="firstTeamRadios2" value="x" required> Blue
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="primaryTeam" id="firstTeamRadios3" value="x" required> Black
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="primaryTeam" id="firstTeamRadios4" value="x" required> Green
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="primaryTeam" id="firstTeamRadios5" value="x" required> Random
+						</label>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<label class="discordRadios inputTitle" for="secondaryTeam">Choose a secondary team, in the event that your primary team is full.</label>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="secondaryTeam" id="secondaryTeamRadios1" value="x" required> Red
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="secondaryTeam" id="secondaryTeamRadios2" value="x" required> Blue
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="secondaryTeam" id="secondaryTeamRadios3" value="x" required> Black
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="secondaryTeam" id="secondaryTeamRadios4" value="x" required> Green
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+								<input class="form-check-input" type="radio" name="secondaryTeam" id="secondaryTeamRadios5" value="x" required> Random
+						</label>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary button">Submit</button>
+		</form>
+	</div>
+
+	<footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			// Variable to hold request
+			var request;
+
+			// Bind to the submit event of our form
+			$("#foo").submit(function(event){
+
+			    // Abort any pending request
+			    if (request) {
+			        request.abort();
+			    }
+			    // setup some local variables
+			    var $form = $(this);
+
+			    // Let's select and cache all the fields
+			    var $inputs = $form.find("input, select, button, textarea");
+
+			    // Serialize the data in the form
+			    var serializedData = $form.serialize();
+
+			    // Let's disable the inputs for the duration of the Ajax request.
+			    // Note: we disable elements AFTER the form data has been serialized.
+			    // Disabled form elements will not be serialized.
+				$('#processingInfoAlert').show();
+				$('#failedPostAlert').hide();
+
+			    $inputs.prop("disabled", true);
+				$inputs.val('');
+
+			    // Fire off the request to /form.php
+			    request = $.ajax({
+			        url: "https://script.google.com/macros/s/AKfycbzLz8gaf3lS1xC1BKvCpqwWnwroN1OhsVHwAgIprIvUpnpmyRdy/exec",
+			        type: "post",
+			        data: serializedData
+			    });
+
+			    // Callback handler that will be called on success
+			    request.done(function (response, textStatus, jqXHR){
+					$('#processingInfoAlert').hide();
+					$('#successfulPostAlert').show();
+			        // Log a message to the console
+			        console.log("Hooray, it worked!");
+			        console.log(response);
+			        console.log(textStatus);
+			        console.log(jqXHR);
+			    });
+
+			    // Callback handler that will be called on failure
+			    request.fail(function (jqXHR, textStatus, errorThrown){
+					$('#processingInfoAlert').hide();
+					$('#failedPostAlert').show();
+					$('#formFailedText').text(textStatus, errorThrown)
+			        // Log the error to the console
+			        console.error(
+			            "The following error occurred: "+
+			            textStatus, errorThrown
+			        );
+			    });
+
+			    // Callback handler that will be called regardless
+			    // if the request failed or succeeded
+			    request.always(function () {
+			        // Reenable the inputs
+			        $inputs.prop("disabled", false);
+			    });
+
+			    // Prevent default posting of form
+			    event.preventDefault();
+			});
+		</script>
+	</footer>
+</body>
+
+</html>
