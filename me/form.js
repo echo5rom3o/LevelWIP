@@ -18,7 +18,6 @@ $(function()
             });
             $('#success_message').hide();
             $('#error_message').show();
-            //reverse the response on the button
             $('button[type="button"]', $form).each(function()
             {
                 $btn = $(this);
@@ -30,13 +29,12 @@ $(function()
                     $btn.prop('orig_label','');
                 }
             });
-        }//else
+        }
     }
 	$('#emailMe').submit(function(e)
       {
         e.preventDefault();
         $form = $(this);
-        //show some response on the button
         $('button[type="submit"]', $form).each(function()
         {
             $btn = $(this);

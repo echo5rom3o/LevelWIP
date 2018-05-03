@@ -24,7 +24,6 @@ nav{
     top: 10%;
     left: 88%;
     color: #fff;
-    /* background-color: rgba(255, 255, 255, .2); */
     font-size: 1.5em;
     z-index: 100;
 }
@@ -45,7 +44,6 @@ nav{
   background-position: 50% 70%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* opacity: .80; */
   overflow: hidden;
 }
 .title {
@@ -115,10 +113,6 @@ nav{
     padding-bottom: 4%;
     color: #2A2D34
 }
-/* .folioTitle {
-    padding-top: 4%;
-    padding-bottom: 4%;
-} */
 .contact {
     display: flex;
     background-color: #2A2D34;
@@ -186,13 +180,6 @@ footer {
 @media only screen and (max-width: 768px) {
     nav{
         display: none;
-        /* position: realative;
-        text-align: right;
-        top: 10%;
-        left: 70%;
-        color: #fff;
-        font-size: 1.2em;
-        z-index: 100; */
     }
 }
 
@@ -200,13 +187,6 @@ footer {
 @media only screen and (max-width : 500px) {
     nav{
         display: none;
-        /* position: realative;
-        text-align: right;
-        top: 10%;
-        left: 70%;
-        color: #fff;
-        font-size: 1.2em;
-        z-index: 100; */
     }
     .wrapper p {
         text-align: center;
